@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: Client side routing has the benefit of preloading the content of the site/web app so that as the user clicks through the links and pages of the site, it just displays and hides the relevant information without having to reload the page or load anything new from the server. This makes the navigation through the content quick and smooth once it is initially loaded.
 
 ## Project Set Up
 
