@@ -39,3 +39,15 @@ main {
 header h1 {
   text-align: center;
 }
+
+#character-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+.character-card{
+  /* max-width: 33%; */
+}

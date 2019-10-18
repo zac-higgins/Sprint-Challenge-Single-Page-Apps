@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Card, CardImg, CardBody, CardTitle, Container, Row, Col } from "reactstrap";
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -40,14 +41,22 @@ export default function CharacterList() {
       </form>
       <div>
         <h2>Characters</h2>
-        {characters.map(character => {
-          return (
-            <div className="character-card" key={character.id}>
-              <h3>{character.name}</h3>
-              <img src={character.image} alt={`${character.name}`} />
-            </div>
-          )
-        })}
+        <Container id="character-cards">
+          <Row>
+            {characters.map(character => {
+              return (
+                <Col xs="3" key={character.id}>
+                  <Card className="character-card">
+                    <CardImg src={character.image} alt={`${character.name}`} />
+                    <CardBody>
+                      <CardTitle>{character.name}</CardTitle>
+                    </CardBody>
+                  </Card>
+                </Col>
+              )
+            })}
+          </Row>
+        </Container>
       </div>
     </div>
   );
