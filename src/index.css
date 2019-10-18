@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: #282C34;
 }
 
 main {
@@ -9,9 +10,10 @@ main {
   min-height: 80vh;
   max-width: 1024px;
   margin: 35px auto;
-  background: #fff;
+  background: #34697F;
   padding: 15px;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  color: #F2FAFF;
 }
 
 .grid-view {
