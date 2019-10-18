@@ -26,7 +26,7 @@ export default function CharacterList() {
         return (
           <div className="character-card" key={character.id}>
             <h3>{character.name}</h3>
-            <img src={character.image} />
+            <img src={character.image} alt={`${character.name}`} />
           </div>
         )
       })}
